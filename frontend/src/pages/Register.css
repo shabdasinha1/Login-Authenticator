@@ -1,0 +1,39 @@
+.register {
+    height: 550px;
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 38%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 18px black;
+    padding: 10px;
+}
+
+.register input {
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.register button {
+    background-color: skyblue;
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.register img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.register a {
+    color: red;
+    text-decoration: none; /* Removes underline */
+  }
+  
+.register a:hover {
+    color: blue;
+  }
+  

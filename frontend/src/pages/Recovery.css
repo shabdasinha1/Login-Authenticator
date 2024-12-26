@@ -1,0 +1,37 @@
+.recovery{
+    height: 350px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 5px 5px 18px black;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 38%;
+    padding: 10px;
+}
+
+.recovery form {
+    margin-top: 40px;
+}
+
+.recovery form input{
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.recovery form button {
+    width: 80%;
+    height: 40px;
+    background-color: skyblue;
+    margin-top: 25px;
+}
+
+.recovery a {
+    color: red;
+    text-decoration: none; /* Removes underline */
+  }
+  
+  .recovery a:hover {
+    color: blue;
+  }
+  

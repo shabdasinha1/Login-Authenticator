@@ -1,0 +1,65 @@
+.main {
+    height: 500px;
+    width: 700px;
+    box-shadow: 8px 8px 30px ;
+    margin-left: 25%;
+    margin-top: 3%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main img {
+    height: 100px;
+    width: 100px;
+}
+
+.main .first input{
+    width: 45%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0;
+    box-shadow: 1px 1px 5px;
+    padding: 0 5px;
+}
+
+.main input{
+    width: 92.5%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0;
+    box-shadow: 1px 1px 5px;
+    padding: 0 5px;
+
+}
+
+.main button {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(30, 100, 204);
+    color: whitesmoke;
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+    
+}
+
+.main form p {
+    margin-top: 10px;
+}
+
+.main p {
+    margin: 0px;
+}
+
+.main a {
+    color: red;
+    text-decoration: none; /* Removes underline */
+  }
+  
+.main a:hover {
+    color: blue;
+  }
+  
