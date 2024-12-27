@@ -45,6 +45,31 @@ export default function Recovery() {
     }
   };
 
+  const resendOtp = async (e) => { 
+    
+    // API call to send OTP
+    try {
+      const res = await fetch("http://localhost:2000/api/send-otp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      // Handle API response
+      if (res.ok) {
+        toast.success("OTP sent to your email!"); // Success message from API
+      } else {
+        toast.error("Failed to send OTP. Try again!"); // Error from API
+      }
+    } catch (err) {
+      // Handle network errors
+      console.error("Error sending OTP:", err);
+      toast.error("Something went wrong. Please try again later.");
+    }
+  };
+
   return (
     <div className="recovery">
       <h1>Password Recovery</h1>
@@ -64,7 +89,7 @@ export default function Recovery() {
       </form>
       <p>
         Didn't receive the OTP?&nbsp;
-        <Link to="#" onClick={() => toast.info("Resend OTP functionality not implemented")}>Resend</Link>
+        <Link to="/recovery" onClick={() => resendOtp()}>Resend</Link>
       </p>
     </div>
   );
